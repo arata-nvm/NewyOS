@@ -39,8 +39,8 @@ entry:
     MOV     SI, msg
 
 putloop:
-    MOV     AL, [SI]        ; SIに1を足す
-    ADD     SI, 1
+    MOV     AL, [SI]
+    ADD     SI, 1           ; SIに1を足す
     CMP     AL, 0
     JE      fin
     MOV     AH, 0x0e        ; 一文字表示
